@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'appwebv1';
+  public propiedadesH1: any
+
+  constructor(){
+    this.propiedadesH1 = {
+      color: '#00214a',
+      fontSize: '2em'
+    }
+  }
+  cambiarprop(){
+    this.propiedadesH1 = {
+      color: '#000000',
+      fontSize: '4em'
+    }
+  }
+
 }
